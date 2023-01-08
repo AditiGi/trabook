@@ -252,12 +252,17 @@ html {
   border-top-right-radius: 8px; */
   border-radius: 8px;
 }
+.italy-pic {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 .rating {
   display: flex;
   /* margin-left: auto; */
   justify-content: space-between;
   align-items: center;
-  padding: 5px 8px;
+  /* padding: 5px 8px; */
+  padding: 1.5rem;
 }
 .location-name {
   font-size: var(--fs-paragraph-A);
@@ -282,7 +287,8 @@ html {
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
-  padding: 0 8px 8px 8px;
+  /* padding: 0 8px 8px 8px; */
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 .location-explore {
   display: flex;
@@ -333,9 +339,9 @@ html {
   border: 1px solid var(--clr-paragraph);
   text-align: center;
   align-self: center;
-  width: 6rem;
-  height: 5rem;
-  padding: 1rem 2rem;
+  width: 50px;
+  height: 50px;
+  padding: 0.2rem 1.3rem;
   border-radius: 50%;
   background-color: var(--clr-btn-inside);
   color: var(--clr-paragraph);
@@ -347,10 +353,137 @@ html {
   align-self: center;
   border: 1px solid var(--clr-paragraph);
   text-align: center;
-  width: 6rem;
-  height: 5rem;
-  padding: 1rem 2rem;
+  width: 50px;
+  height: 50px;
+  padding: 0.2rem 1.3rem;
   border-radius: 50%;
   background-color: var(--clr-primary-O);
   color: var(--clr-btn-inside);
+}
+
+/* .packages-headings::after {
+  content: "";
+  background-image: url("Assets/Element(1)png");
+} */
+
+.vacation-packages {
+  background-color: var(--clr-bg);
+  padding-top: 6rem;
+  position: relative;
+}
+.packages-headings {
+  font-size: var(--fs-heading-secondary);
+  color: var(--clr-primary-B);
+  font-family: "Volkhov";
+  text-align: center;
+}
+.packages-description {
+  font-size: var(--fs-paragraph-B);
+  color: var(--clr-paragraph);
+  font-family: "Poppins";
+  text-align: center;
+  margin: auto;
+  width: 40vw;
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+}
+.palm-tree-img {
+  position: absolute;
+  top: 10%;
+  right: 23%;
+}
+.buttons {
+  position: absolute;
+  top: 25%;
+  /* left: 45%; */
+  right: 9.5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.button-1 {
+  display: flex;
+  border: 1px solid var(--clr-paragraph);
+  text-align: center;
+  align-self: center;
+  width: 50px;
+  height: 50px;
+  padding: 0.2rem 1.3rem;
+  border-radius: 50%;
+  background-color: var(--clr-btn-inside);
+  color: var(--clr-paragraph);
+  cursor: pointer;
+}
+
+.button-2 {
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  border: 1px solid var(--clr-paragraph);
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  padding: 0.2rem 1.3rem;
+  border-radius: 50%;
+  background-color: var(--clr-primary-O);
+  color: var(--clr-btn-inside);
+}
+.package-cards {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  padding-bottom: 4rem;
+}
+.card-box {
+  background-color: var(--clr-btn-inside);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.113);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.package-pricing {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.package-location {
+  font-size: var(--fs-paragraph-A);
+  color: var(--clr-primary-B);
+  font-family: "Poppins";
+}
+.package-price {
+  font-size: var(--fs-paragraph-A);
+  color: var(--clr-primary-O);
+  font-family: "Poppins";
+}
+.trip-duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.duration {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.days {
+  font-size: var(--fs-paragraph-C);
+  color: var(--clr-paragraph);
+  font-family: "Poppins";
+}
+.actual-rating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.location-rating {
+  font-size: var(--fs-paragraph-C);
+  color: var(--clr-paragraph);
+  font-family: "Poppins";
 }
