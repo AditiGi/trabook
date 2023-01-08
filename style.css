@@ -487,3 +487,214 @@ html {
   color: var(--clr-paragraph);
   font-family: "Poppins";
 }
+.testimonial-section {
+  display: flex;
+  margin: auto;
+  width: 100vw;
+  justify-content: space-around;
+  padding-top: 6rem;
+  align-items: center;
+  padding-bottom: 8rem;
+  /* gap: 1rem; */
+  background-color: var(--clr-bg-2);
+  position: relative;
+}
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  /* margin: auto; */
+  /* width: 10vw; */
+  /* align-items: flex-end; */
+}
+.testimonial-heading {
+  font-size: var(--fs-heading-secondary);
+  font-family: "Volkhov";
+  color: var(--clr-primary-B);
+  margin: auto;
+  width: 30vw;
+}
+.testimonial-descrpt {
+  font-size: var(--fs-paragraph-C);
+  color: var(--clr-paragraph);
+  font-family: "Poppins";
+  margin: auto;
+  width: 30vw;
+}
+.testimonial-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin: auto;
+  width: 30vw;
+}
+.testimonial-box {
+  position: relative;
+}
+.client-testimonial {
+  background-color: var(--clr-btn-inside);
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.113);
+  width: 42rem;
+  padding: 3rem;
+  /* margin: auto;
+  width: 30vw; */
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  transform: translate(0%, -55%);
+  z-index: 2;
+  border-radius: 4px;
+}
+.testimonial {
+  font-size: var(--fs-paragraph-C);
+  color: var(--clr-paragraph);
+  font-family: "Poppins";
+  margin-bottom: 1.5rem;
+}
+.client-name {
+  font-size: var(--fs-paragraph-B);
+  color: var(--clr-primary-B);
+  font-family: "Poppins";
+}
+.client-location {
+  font-size: var(--fs-paragraph-D);
+  font-family: "Poppins";
+  color: var(--clr-paragraph);
+}
+.client-2-testimonial {
+  background-color: var(--clr-btn-inside);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.113);
+  width: 40rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  position: absolute;
+  transform: translate(-90%, -20%);
+  opacity: 0.5;
+  border-radius: 4px;
+}
+
+.client-2 {
+  font-size: var(--fs-paragraph-B);
+  color: var(--clr-primary-B);
+  font-family: "Poppins";
+}
+
+.client-occupation {
+  color: var(--clr-paragraph);
+  font-size: var(--fs-paragraph-D);
+  font-family: "Poppins";
+}
+.client-pic {
+  position: absolute;
+  top: 15%;
+  right: 45%;
+  z-index: 3;
+}
+.planes {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+/* .section-6 {
+  padding-top: 5rem;
+  margin: auto;
+   width: 90vw; 
+}
+.section-6-container {
+  display: flex;
+  gap: 3rem;
+}
+.section-6-card {
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+   align-items: center; 
+   justify-content: center; 
+}
+
+.section-6-heading {
+  font-size: var(--fs-heading-secondary);
+  color: var(--clr-primary-B);
+  text-align: center;
+  margin-bottom: 5rem;
+  font-family: "Volkhov";
+}
+.section-6-descrp {
+   margin-top: 2rem; 
+  font-size: var(--fs-paragraph-B);
+  color: var(--clr-primary-B);
+  font-family: "Poppins";
+
+  letter-spacing: 1.2; 
+  cursor: pointer;
+}
+.section-6-date {
+  font-size: var(--fs-paragraph-C);
+  color: var(--clr-paragraph);
+  font-family: "Poppins";
+  margin-top: 2rem;
+  letter-spacing: 1.2;
+}  */
+.blog {
+  margin: auto;
+  width: 90vw;
+  padding-top: 4rem;
+  margin-top: 2rem;
+}
+.blog-heading {
+  font-size: var(--fs-heading-secondary);
+  color: var(--clr-primary-B);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: "Volkhov";
+}
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 2rem;
+}
+
+.blog-box {
+  /* outline: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.blog-descrptn {
+  margin-top: 2rem;
+  font-size: var(--fs-paragraph-B);
+  color: var(--clr-primary-B);
+  font-family: "Poppins";
+}
+.blog-date {
+  font-size: var(--fs-paragraph-C);
+  color: var(--clr-paragraph);
+  font-family: "Poppins";
+  margin-top: 2rem;
+  letter-spacing: 1.2;
+}
+.email-section {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+input[type="email"] {
+  height: 32px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.subscribe {
+}
