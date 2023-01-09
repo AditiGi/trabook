@@ -644,6 +644,7 @@ html {
   width: 90vw;
   padding-top: 4rem;
   margin-top: 2rem;
+  padding-bottom: 4rem;
 }
 .blog-heading {
   font-size: var(--fs-heading-secondary);
@@ -677,7 +678,7 @@ html {
   font-size: var(--fs-paragraph-C);
   color: var(--clr-paragraph);
   font-family: "Poppins";
-  margin-top: 2rem;
+  margin-top: 1rem;
   letter-spacing: 1.2;
 }
 .email-section {
@@ -685,16 +686,126 @@ html {
   flex-direction: column;
 }
 
-label {
-  font-size: 14px;
-  margin-bottom: 8px;
+.subscribe {
+  background-color: var(--clr-primary-O);
+  border-radius: 8px;
+  margin: auto;
+  width: 90vw;
+  height: 25vw;
+  margin-top: 4rem;
+  position: relative;
+}
+.subscribe-heading {
+  font-size: var(--fs-heading-secondary);
+  font-family: "Volkhov";
+  color: var(--clr-btn-inside);
+  text-align: center;
+  margin: auto;
+  width: 50vw;
+  padding-top: 5rem;
+  margin-bottom: 4rem;
+}
+.subscribe-mail {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-btn-inside);
+  border-radius: 9px;
+  height: 6rem;
+  width: 65rem;
+  margin: 1rem auto;
+  padding-right: 7px;
+  padding-left: 15px;
+  cursor: pointer;
+
+  /* margin-top: 1rem; */
+}
+.mail-icon {
+  height: 2rem;
+  stroke: var(--clr-mail-text);
+}
+.mail-box {
+  color: var(--clr-mail-text);
+  font-size: var(--fs-paragraph-C);
+  font-family: "Poppins";
+  text-decoration: none;
+}
+.subscribe-btn {
+  border: none;
+  color: var(--clr-btn-inside);
+  font-size: var(--fs-paragraph-C);
+  font-family: "Poppins";
+  background-color: var(--clr-primary-O);
+  border-radius: 7px;
+  height: 4.7rem;
+  width: 12rem;
+  cursor: pointer;
 }
 
-input[type="email"] {
-  height: 32px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.subscribe {
+.palm-trees-2 {
+  position: absolute;
+  top: 2%;
+  right: 0%;
+}
+.contact-info {
+  display: flex;
+  /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+  margin: auto;
+  width: 90vw;
+  padding-top: 3rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--clr-mail-text);
+  margin-bottom: 3rem;
+
+  /* justify-items: space-around; */
+}
+.social-handles {
+  padding-bottom: 2.5rem;
+}
+.margin-top {
+  /* margin-top: 2rem; */
+  margin: auto;
+  width: 20vw;
+  padding-top: 2rem;
+}
+
+.social-heading {
+  font-size: var(--fs-paragraph-B);
+  color: var(--clr-primary-B);
+  font-family: "Poppins";
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.social-details {
+  font-size: var(--fs-paragraph-C);
+  color: var(--clr-paragraph);
+  font-family: "Poppins";
+  line-height: 1.5;
+  display: flex;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.social-logo {
+  background-color: var(--clr-btn-inside);
+  border-radius: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  /* padding-top: 1rem; */
+}
+.IG-logo {
+  background-color: var(--clr-primary-O);
+  border-radius: 100%;
+  padding: 1.2rem;
+  margin-right: 12px;
+  margin-left: 12px;
+  cursor: pointer;
+  /* padding-top: 1rem; */
 }
