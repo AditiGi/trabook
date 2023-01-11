@@ -1071,3 +1071,174 @@ html {
     font-size: var(--fs-paragraph-D);
   }
 }
+@media (max-width: 640px) {
+  /**************** MENUBAR  ******************/
+
+  .menubar-contents {
+    gap: 0.7rem;
+    font-size: var(--fs-paragraph-small);
+  }
+  .menubar-btns {
+    gap: 1rem;
+  }
+  .login-btn {
+    font-size: var(--fs-paragraph-small);
+  }
+  .sign-up-btn {
+    font-size: var(--fs-paragraph-small);
+  }
+  .button {
+    width: 8rem;
+    height: 3rem;
+  }
+
+  /******************** 1st SECTION ********************/
+  .hero-img {
+    height: 80%;
+  }
+  .hero-heading {
+    padding-top: 2rem;
+    font-size: var(--fs-title-heading);
+    margin: 0 auto;
+  }
+
+  .hero-description {
+    font-size: var(--fs-paragraph-small);
+  }
+  .hero-content {
+    display: flex;
+    gap: 1.5rem;
+    width: 400px;
+  }
+  .hero-btn {
+    padding: 8px 2px;
+    width: 50%;
+    font-size: 10px;
+  }
+  .container-heading {
+    font-size: var(--fs-paragraph-D);
+  }
+  .dropdown-logo {
+    width: 10px;
+  }
+  .container-btn {
+    font-size: var(--fs-paragraph-D);
+  }
+
+  /********************** 2nd SECTION *********************/
+
+  .info-explore-container {
+    gap: 1rem;
+  }
+  .info-explore-box {
+    height: 25rem;
+    /* width: 40rem; */
+    padding: 2rem;
+  }
+  .info-img {
+    display: none;
+  }
+  .info-heading {
+    font-size: var(--fs-title-heading);
+  }
+  .info-description {
+    font-size: var(--fs-paragraph-D);
+    width: 55vw;
+  }
+  .info-explore-heading {
+    font-size: var(--fs-paragraph-B);
+  }
+  .info-explore-details {
+    font-size: var(--fs-paragraph-D);
+  }
+  .sign-up-icon {
+    width: 40px;
+  }
+
+  /********************** 3rd SECTION **********************/
+
+  .offers-location-container {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .offers-heading {
+    font-size: var(--fs-title-heading);
+  }
+  .offers-description {
+    font-size: var(--fs-paragraph-D);
+    margin: 0 auto;
+    width: 50vw;
+  }
+
+  .offers-location {
+    width: 22rem;
+  }
+  .star-icon {
+    width: 12px;
+  }
+  .location-img {
+    width: 22rem;
+  }
+  .location-name {
+    font-size: var(--fs-paragraph-C);
+  }
+
+  /********************* 4th SECTION *******************/
+
+  /* .vacation-packages {
+    display: flex;
+    flex-direction: column;
+  } */
+  .packages-headings {
+    font-size: var(--fs-title-heading);
+  }
+  .package-cards {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column: 1 / 2;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .packages-description {
+    font-size: var(--fs-paragraph-D);
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  .trip-duration {
+    display: none;
+  }
+
+  .card-box {
+    width: 200px;
+  }
+
+  /******************** 5th SECTION ******************/
+
+  .blog-container {
+    gap: 1rem;
+    margin: auto;
+    width: 60vw;
+    /* text-align: center; */
+  }
+
+  .blog-heading {
+    font-size: var(--fs-title-heading);
+  }
+
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    justify-content: center;
+    align-items: center;
+  }
+}
