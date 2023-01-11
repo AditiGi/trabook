@@ -89,18 +89,20 @@ html {
   margin: auto;
   justify-content: space-between;
   background-color: var(--clr-bg);
-  /* align-items: center; */
+  align-items: center;
 }
 .hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  width: 600px;
 }
 .hero-heading {
   font-size: var(--fs-heading-primary);
   color: var(--clr-primary-B);
   font-family: "Volkhov";
+  /* width: 30vw; */
 }
 
 .hero-description {
@@ -108,7 +110,7 @@ html {
   font-size: var(--fs-paragraph-A);
   color: var(--clr-paragraph);
   font-family: "Poppins";
-  width: 35vw;
+  /* width: 35vw; */
   line-height: 1.5;
 }
 
@@ -118,16 +120,18 @@ html {
   font-family: "Poppins";
   border-radius: 4px;
   border: 1px solid var(--clr-primary-O);
-  width: 17rem;
-  height: 5rem;
+  /* width: 17rem;
+  height: 5rem; */
+  padding: 1.3rem 2rem;
   cursor: pointer;
+  width: 25%;
 
   /* border: none; */
 }
 
 .hero-img {
-  max-width: 65rem;
-  height: 50rem;
+  max-width: 55rem;
+  height: 45rem;
 }
 .container {
   display: grid;
@@ -242,6 +246,7 @@ html {
   justify-content: center;
   gap: 4.5rem;
   padding-bottom: 10rem;
+  overflow-x: scroll;
 }
 .offers-location {
   /* outline: 1px solid black; */
@@ -435,6 +440,7 @@ html {
   justify-content: center;
   gap: 3.5rem;
   padding-bottom: 4rem;
+  overflow-x: scroll;
 }
 .card-box {
   background-color: var(--clr-btn-inside);
@@ -658,6 +664,7 @@ html {
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   gap: 2rem;
+  overflow-x: scroll;
 }
 
 .blog-box {
@@ -691,9 +698,10 @@ html {
   border-radius: 8px;
   margin: auto;
   width: 90vw;
-  height: 25vw;
+  /* height: 25vw; */
   margin-top: 4rem;
   position: relative;
+  padding-bottom: 2.5rem;
 }
 .subscribe-heading {
   font-size: var(--fs-heading-secondary);
@@ -708,29 +716,30 @@ html {
 .subscribe-mail {
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   background-color: var(--clr-btn-inside);
   border-radius: 9px;
-  height: 6rem;
+  /* height: 6rem; */
   width: 65rem;
   margin: 1rem auto;
   padding-right: 7px;
   padding-left: 15px;
+
   cursor: pointer;
+  gap: 0.5rem;
 
   /* margin-top: 1rem; */
+}
+
+.subscribe-mail input {
+  border: none;
 }
 .mail-icon {
   height: 2rem;
   stroke: var(--clr-mail-text);
 }
-.mail-box {
-  color: var(--clr-mail-text);
-  font-size: var(--fs-paragraph-C);
-  font-family: "Poppins";
-  text-decoration: none;
-}
+
 .subscribe-btn {
   border: none;
   color: var(--clr-btn-inside);
@@ -741,18 +750,11 @@ html {
   height: 4.7rem;
   width: 12rem;
   cursor: pointer;
+  margin: 5px 5px;
+  margin-right: 0px;
+  margin-left: auto;
 }
 
-.subscribe-box {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.palm-trees-2 {
-  position: absolute;
-  top: 2%;
-  right: 0%;
-}
 .contact-info {
   display: flex;
   /* grid-template-columns: 2fr 1fr 1fr 1fr; */
@@ -808,4 +810,264 @@ html {
   margin-left: 12px;
   cursor: pointer;
   /* padding-top: 1rem; */
+}
+@media (max-width: 768px) {
+  /****************** MENUBAR *********************/
+  .menubar-contents {
+    gap: 1rem;
+    font-size: var(--fs-paragraph-D);
+  }
+  .menubar-btns {
+    gap: 1rem;
+  }
+  .login-btn {
+    font-size: var(--fs-paragraph-D);
+  }
+  .sign-up-btn {
+    font-size: var(--fs-paragraph-D);
+  }
+  .button {
+    width: 10rem;
+    height: 3.5rem;
+  }
+  /* .trabook-logo {
+    width: 5rem;
+  } */
+
+  /******************** 1st SECTION *********************/
+  .hero-img {
+    width: 100%;
+    /* height: 30rem; */
+    /* overflow: hidden; */
+  }
+
+  .hero-heading {
+    font-size: 35px;
+  }
+
+  .hero {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px 10px 35px;
+  }
+
+  .hero-description {
+    font-size: var(--fs-paragraph-D);
+  }
+  .hero-content {
+    display: flex;
+    /* align-items: center; */
+    /* padding-top: 20px; */
+    gap: 3rem;
+  }
+  .hero-btn {
+    /* width: 12rem;
+    height: 4rem; */
+    padding: 1rem;
+    width: 40%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .container-description {
+    display: none;
+  }
+
+  .container-btn {
+    padding: 5px;
+    width: 100%;
+  }
+
+  /********************* 2nd SECTION ********************/
+  .info-section {
+    margin: 0 auto;
+    width: 90vw;
+  }
+  .info-explore-container {
+    gap: 1.5rem;
+  }
+  .info-explore-box {
+    height: 25rem;
+    /* width: 40rem; */
+    padding: 2rem;
+  }
+  .info-img {
+    display: none;
+  }
+  .info-heading {
+    font-size: 35px;
+  }
+  .info-description {
+    font-size: var(--fs-paragraph-D);
+    width: 45vw;
+  }
+  .info-explore-heading {
+    font-size: var(--fs-paragraph-A);
+  }
+  .info-explore-details {
+    font-size: var(--fs-paragraph-D);
+  }
+  .sign-up-icon {
+    width: 40px;
+  }
+
+  /******************* 3rd SECTION **********************/
+
+  .offers-section {
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .offers-location-container {
+    gap: 2rem;
+  }
+  .offers-heading {
+    font-size: 35px;
+  }
+  .offers-description {
+    font-size: var(--fs-paragraph-D);
+    margin: 0 auto;
+    width: 45vw;
+  }
+
+  .offers-location {
+    width: 22rem;
+  }
+  .star-icon {
+    width: 12px;
+  }
+  .location-img {
+    width: 15.8rem;
+  }
+  .location-name {
+    font-size: var(--fs-paragraph-B);
+  }
+  .ratings {
+    font-size: var(--fs-paragraph-D);
+  }
+  .location-icon {
+    width: 12px;
+  }
+  .location-country {
+    font-size: var(--fs-paragraph-D);
+  }
+  .old-price {
+    font-size: 10px;
+  }
+  .discounted-price {
+    font-size: 10px;
+  }
+  .location-explore {
+    gap: 2px;
+  }
+  .location-deals {
+    gap: 2px;
+  }
+  .rating {
+    padding: 1rem;
+  }
+  .location-ideas {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .btn {
+    bottom: 0%;
+    left: 42%;
+    right: 45%;
+  }
+  .btn-logo {
+    width: 15px;
+  }
+
+  /******************** 4th SECTION ********************/
+  .vacation-packages {
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .packages-headings {
+    font-size: 35px;
+  }
+
+  .packages-description {
+    font-size: var(--fs-paragraph-D);
+    width: 50vw;
+    margin: 0 auto;
+  }
+  .palm-tree-img {
+    display: none;
+  }
+  .buttons {
+    display: none;
+  }
+  .rome-pic {
+    width: 20rem;
+  }
+  .package-location {
+    font-size: var(--fs-paragraph-C);
+  }
+  .package-price {
+    font-size: var(--fs-paragraph-C);
+  }
+  .location-vector,
+  .star-vector {
+    width: 12px;
+  }
+  .days,
+  .location-rating {
+    font-size: var(--fs-paragraph-D);
+  }
+  .duration,
+  .actual-rating {
+    gap: 0.5rem;
+  }
+
+  /********************* 5th SECTION ********************/
+  .blog {
+    margin: 0 auto;
+    width: 90vw;
+  }
+  .blog-container {
+    gap: 1rem;
+  }
+  .blog-heading {
+    font-size: 35px;
+  }
+  .destination-pic {
+    width: 15rem;
+  }
+
+  .blog-descrptn {
+    font-size: var(--fs-paragraph-D);
+  }
+  .blog-date {
+    font-size: var(--fs-paragraph-small);
+  }
+
+  /********************* 6th SECTION ********************/
+  .subscribe {
+    margin: auto;
+    width: 90vw;
+  }
+  .subscribe-heading {
+    font-size: var(--fs-title-heading);
+
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .subscribe-mail {
+    width: 50rem;
+    margin: 0.5rem auto;
+    padding-right: 7px;
+    padding-left: 15px;
+  }
+  .contact-info {
+    margin: 0 auto;
+    width: 90vw;
+  }
+  .social-details {
+    font-size: var(--fs-paragraph-D);
+  }
 }
