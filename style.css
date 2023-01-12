@@ -768,7 +768,7 @@ html {
   justify-content: space-between;
   margin-top: 2rem;
   border-bottom: 1px solid var(--clr-mail-text);
-  margin-bottom: 3rem;
+  /* margin-bottom: 0.5rem; */
 
   /* justify-items: space-around; */
 }
@@ -814,6 +814,15 @@ html {
   margin-left: 12px;
   cursor: pointer;
   /* padding-top: 1rem; */
+}
+
+.developed {
+  font-size: var(--fs-paragraph-D);
+  color: #222222c6;
+  font-family: "Poppins";
+  margin: 0 auto;
+  width: 90vw;
+  margin-bottom: 2rem;
 }
 @media (max-width: 768px) {
   /************************* MENUBAR ************************/
