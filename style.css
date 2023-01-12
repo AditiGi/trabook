@@ -546,7 +546,8 @@ html {
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.113);
   width: 42rem;
   padding: 3rem;
-  z-index: 10000;
+  z-index: 3;
+  position: relative;
   /* margin: auto;
   width: 30vw; */
 
@@ -578,7 +579,7 @@ html {
   justify-content: flex-end;
   padding: 2rem;
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   top: 35%;
   left: 16%;
   opacity: 0.5;
@@ -598,9 +599,10 @@ html {
 }
 .client-pic {
   position: absolute;
-  top: 15%;
-  right: 45%;
-  z-index: 3;
+  z-index: 15000;
+  right: 93%;
+  top: -22%;
+  /* z-index: 3; */
 }
 .planes {
   position: absolute;
@@ -1032,6 +1034,53 @@ html {
     gap: 0.5rem;
   }
 
+  /************************* TESTIMONIAL SECTION *************************/
+
+  /* .testimonial-box {
+    display: flex;
+    flex-direction: column;
+  } */
+  .testimonial-section {
+    flex-direction: column;
+    padding: 5rem;
+    gap: 1.5rem;
+  }
+  .client-2-testimonial {
+    display: none;
+  }
+  .testimonial-heading {
+    font-size: 35px;
+    width: 300px;
+  }
+  .testimonial-descrpt {
+    width: 300px;
+    font-size: var(--fs-paragraph-D);
+  }
+  .testimonial-btn {
+    display: none;
+  }
+  .testimonial {
+    font-size: var(--fs-paragraph-D);
+  }
+  .client-testimonial {
+    padding: 2rem;
+  }
+  .testimonial-box {
+    width: 30rem;
+    /* align-self: center; */
+    transform: translateX(-20%);
+
+    margin-top: 10px;
+  }
+  .client-name {
+    font-size: var(--fs-paragraph-D);
+  }
+  .client-location {
+    font-size: var(--fs-paragraph-small);
+  }
+  .client-pic {
+    display: none;
+  }
   /************************* 5th SECTION ************************/
   .blog {
     margin: 0 auto;
