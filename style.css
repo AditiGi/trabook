@@ -392,6 +392,9 @@ html {
   margin-top: 1rem;
   padding-bottom: 3rem;
 }
+.rome-pic {
+  width: 25rem;
+}
 .palm-tree-img {
   position: absolute;
   top: 10%;
@@ -457,12 +460,12 @@ html {
   padding: 1.5rem;
 }
 .package-location {
-  font-size: var(--fs-paragraph-A);
+  font-size: var(--fs-paragraph-B);
   color: var(--clr-primary-B);
   font-family: "Poppins";
 }
 .package-price {
-  font-size: var(--fs-paragraph-A);
+  font-size: var(--fs-paragraph-B);
   color: var(--clr-primary-O);
   font-family: "Poppins";
 }
@@ -496,11 +499,11 @@ html {
 .testimonial-section {
   display: flex;
   margin: auto;
-  width: 100vw;
+  padding: 8rem 0;
   justify-content: space-around;
-  padding-top: 6rem;
+
   align-items: center;
-  padding-bottom: 8rem;
+
   /* gap: 1rem; */
   background-color: var(--clr-bg-2);
   position: relative;
@@ -543,13 +546,10 @@ html {
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.113);
   width: 42rem;
   padding: 3rem;
+  z-index: 10000;
   /* margin: auto;
   width: 30vw; */
-  position: absolute;
-  top: 20%;
-  right: 30%;
-  transform: translate(0%, -55%);
-  z-index: 2;
+
   border-radius: 4px;
 }
 .testimonial {
@@ -578,7 +578,9 @@ html {
   justify-content: flex-end;
   padding: 2rem;
   position: absolute;
-  transform: translate(-90%, -20%);
+  z-index: 10;
+  top: 35%;
+  left: 16%;
   opacity: 0.5;
   border-radius: 4px;
 }
@@ -996,14 +998,20 @@ html {
     width: 50vw;
     margin: 0 auto;
   }
+  .package-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .palm-tree-img {
     display: none;
   }
   .buttons {
     display: none;
   }
+
   .rome-pic {
-    width: 20rem;
+    width: 100%;
   }
   .package-location {
     font-size: var(--fs-paragraph-C);
@@ -1203,7 +1211,7 @@ html {
     align-items: center; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
     /* grid-column: 1 / 2; */
     justify-content: center;
     align-items: center;
@@ -1226,6 +1234,7 @@ html {
 
   .card-box {
     width: 200px;
+    justify-self: center;
   }
 
   /************************* 5th SECTION ************************/
